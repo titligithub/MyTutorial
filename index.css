@@ -1,0 +1,201 @@
+/* Resetting some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #555;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Heading styles */
+.heading h1 {
+  color: antiquewhite;
+  font-size: 4.375rem; /* 70px */
+  font-weight: 700;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.fs-800 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin-top: 50px;
+  color: beige;
+  margin-bottom: 80px;
+}
+
+.text-accent-700 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: bold;
+  line-height: 1;
+  color: rgb(7, 188, 13);
+}
+
+/* Card styles */
+.card {
+  margin-top: 30px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Footer styles */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 15px;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-section .social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Responsive styles */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .fs-800,
+  .text-accent-700 {
+    font-size: 2rem;
+  }
+
+  .card {
+    margin: 20px auto;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .heading h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+  }
+
+  .fs-800,
+  .text-accent-700 {
+    font-size: 1.75rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-section h2 {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
